@@ -1,0 +1,473 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+*{
+  box-sizing: border-box;
+}
+
+/* custom font */
+@font-face {
+  font-family: America;
+  src: url(../fonts/GT-America-Standard-Regular-Trial.woff2);
+}
+
+@font-face {
+  font-family: America Md;
+  src: url(../fonts/GT-America-Standard-Medium-Trial.otf);
+}
+
+@font-face {
+  font-family: Pressura;
+  src: url(../fonts/GT-Pressura-Regular-Trial.woff2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* change font  */
+  /* content is from iat 235 */
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 2rem;
+  background-color: rgb(246, 243, 234);
+  color: rgb(44, 21, 8);
+  line-height: 1.5;
+
+}
+
+/* media querey */
+@media screen and (max-width:992px){
+
+}
+
+@media screen and (max-width:600px){
+  body{
+    .payment-container {
+      flex-direction: column;
+  }
+    .cart-content{
+      flex-direction: column;
+    }
+
+  }
+
+}
+
+/* add space between section elemnets*/
+/* content is from iat 235 */
+
+section{
+
+  margin-bottom: 4rem;
+
+}
+
+.element {
+  
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: rgb(44, 21, 8);
+}
+
+h1{
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  color:rgb(44, 21, 8);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  color:rgb(44, 21, 8);
+  margin-top: 6rem;
+}
+
+h3 {
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  color:rgb(44, 21, 8);
+
+  margin-top: 1rem;
+}
+
+h4 {
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 0.25rem;
+}
+
+legend{
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks. */
+/* content from iat 235 */
+p {
+  font-family: Pressura;
+  margin-top:0;
+  max-width: 30rem;
+}
+
+ul, ol{
+  font-family: Pressura, sans-serif;
+  max-width: 60rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+code {
+  background-color: rgb(237,234,225);
+  padding: 0.5rem;
+  display: block;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav a {
+  font-family: America, sans-serif;
+  color: rgb(86, 197, 211);
+  text-decoration: none;
+  margin-right: 1.5rem;
+  transition: color 0.5s ease;
+
+}
+
+nav a:hover, nav a:focus {
+  color: rgb(255, 108, 7);
+  text-decoration: underline;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: rgb(44, 21, 8);
+  background-color: transparent;
+  border: 1px solid rgb(44, 21, 8);
+  border-radius: 2rem;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: rgb(237,234,225);
+  background: linear-gradient(to bottom right, rgb(86, 197, 211), rgb(179, 221, 75));
+ 
+}
+
+.in-text{
+  color: rgb(86, 197, 211);
+  text-decoration: none;
+  
+}
+/* add different hover and focus state styling to the in-text link*/
+.in-text:hover, .in-text:focus{
+  color: rgb(255, 108, 7);
+  text-decoration: underline;
+
+}
+
+/* different hover and focus state styling to the image as a link. */
+/*styleing source: https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_opacity  */
+
+.image-link {
+  display: inline-block;
+  background-color: rgb(255, 108, 7);
+  width: 10rem;
+  max-width: 100%;
+}
+
+.image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+}
+
+.image:hover, .image:focus{
+  opacity: 0.3;
+
+}
+
+/* input and label styling */
+/* from class suggested website: https://learn.shayhowe.com/html-css/building-forms/ */
+form{
+  border: 0.06rem solid rgb(225, 220, 206);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  width: auto;
+  max-width: fit-content;
+  padding: 0.5rem;
+  background-color: rgb(251, 250, 245);
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+input {
+  border-radius: 5px;
+  margin: 0;
+}
+
+.payment-container{
+  display:flex;
+  gap: 2rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.payment-container fieldset{
+  flex: 1;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid rgb(196,187,163);
+  border-radius: 0.5rem;
+}
+
+.payment-container legend {
+  padding: 0 0.5rem;
+  font-weight:bold;
+
+}
+
+.payment-container label {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.payment-container input[type="text"] {
+  display: block;
+  width: 100%;
+  margin: 0 0 0.75rem;
+  border: 1px solid rgb(196,187,163);
+  border-radius: 0.3rem;
+  background-color: rgb(237,234,225);
+}
+
+#payment form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 60rem;
+
+}
+
+#payment input[type="submit"] {
+  align-self: flex-end;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.cart-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+
+  #payment form {
+    width: 100%;
+    max-width: 100%;
+    padding: 1 rem;
+  }
+
+  .payment-container, .cart-content {
+    flex-direction: column;
+    align-items:strech;
+    width: 100%;
+    gap: 1 rem;
+  }
+
+  .payment-container fieldset {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+form label {
+  font-family: Pressura, sans-serif;
+  color: rgb(44, 21, 8);
+}
+
+form input[type="radio"]{
+  width: auto;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-container article {
+  flex: 1 1 15rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product-container article {
+    width: 100%;
+  }
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+input[type="text"]{
+  background-color: rgb(237,234,225);
+  border: 1px solid;
+  border-color:rgb(196,187,163);
+  padding: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 10px;
+
+
+}
+
+/*submit and resrt*/
+input[type="submit"], input[type="reset"]{
+  display:inline-block;
+  padding: 0.5rem;
+  width: 5rem;
+  margin-right: 0.5rem;
+  background-color: transparent;
+  color: rgb(44, 21, 8);
+  border: 1px solid rgb(44, 21, 8);
+  border-radius: 2rem;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+
+
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus{
+  color: rgb(237,234,225);
+  background: linear-gradient(to bottom right, rgb(86, 197, 211), rgb(179, 221, 75));
+
+}
+
+input[type="reset"]:hover, input[type="reset"]:focus{
+  color: rgb(237,234,225);
+  background: linear-gradient(to bottom right, rgb(86, 197, 211), rgb(179, 221, 75));
+}
+
+ol, ul{
+  padding-left: 2rem;
+}
+
+article {
+  width: 15rem;
+  min-height: 22rem;
+  padding: 1rem;
+  border: 1px solid rgb(196,187,163);
+  border-radius: 1rem;
+  background-color: rgb(224,219,204);
+  margin-bottom: 1rem;
+
+}
+
+article a {
+  color: rgb(86, 197, 211);
+  text-decoration: none;
+}
+article a:hover, article a:focus {
+  color: rgb(255, 108, 7);
+  text-decoration: underline;
+}
+
+.productimg {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+
+}
+
+.product-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.product-details p {
+  flex: 1;
+  min-width: 0;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .product-details {
+    flex-direction: column;
+  }
+}
+
+
+.cartlink {
+  color: rgb(86, 197, 211);
+  text-decoration: none;
+
+}
+
+.cartlink:hover {
+  color: rgb(255, 108, 7);
+  text-decoration: underline;
+}
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+@media screen and (max-width: 600px) {
+  #payment form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #payment .payment-container {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  #payment .payment-container fieldset {
+    width: 100%;
+    min-width: 0;
+    padding: 0.5rem;
+  }
+
+  #payment .payment-container input[type="text"] {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+}
