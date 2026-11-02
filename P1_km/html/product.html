@@ -2,26 +2,56 @@
 
 <html lang ="en">
     <html>
-        <!-- A product/service listing (i.e. a product name, 
-         image, cost, link to detailed description, etc) -->
          
-        <head>
+         <head>
+
+            <meta charset="utf-8">
+            <title>Menu</title>
+
+            <link href="../css/product.css" rel="stylesheet">
 
         </head>
         <body>
-            <h4> Classic Latte</h4>
+            <h1> Classic Latte</h1>
 
           <div class="product-details">
-          <img class="productimg" src="latte.jpg" alt="latte" width="100">
+          <img class="productimg" src="../html/img/latte.jpg" alt="latte" width="100">
           <p> a classic latte that you can never go wrong with. A classic espresso drink with hot steamed milk. </p>
-          <p> Ingredients: espresso and steamed milk </p>
           </div>
+          <p> Ingredients: espresso and steamed milk </p>
 
           <p>$4.50</p>
 
         
 
         </body>
+
+              </section>
+
+
+      <!--used w3schools to learn about radio button-->
+
+        <form> 
+
+          <fieldset>
+            
+            <legend>Choose your drink size:</legend>
+            <label for="small">Small</label>
+            <input type="radio" id="small" name="drink_size" value="small">
+
+            <label for="medium">Medium</label>
+            <input type="radio" id="medium" name="drink_size" value="medium">
+
+            <label for="large">Large</label>
+            <input type="radio" id="large" name="drink_size" value="large">
+
+
+
+          </fieldset>
+        </form>
+
+
+      </section>
     </html>
 
 </html>
