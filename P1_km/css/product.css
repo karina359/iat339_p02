@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+}
+
+/* custom font */
+@font-face {
+  font-family: America;
+  src: url(../fonts/GT-America-Standard-Regular-Trial.woff2);
+}
+
+@font-face {
+  font-family: America Md;
+  src: url(../fonts/GT-America-Standard-Medium-Trial.otf);
+}
+
+@font-face {
+  font-family: Pressura;
+  src: url(../fonts/GT-Pressura-Regular-Trial.woff2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* change font  */
+  /* content is from iat 235 */
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 2rem;
+  background-color: rgb(246, 243, 234);
+  color: rgb(44, 21, 8);
+  line-height: 1.5;
+
+}
+
+/* media querey */
+@media screen and (max-width:992px){
+
+}
+
+@media screen and (max-width:600px){
+  body{
+    .payment-container {
+      flex-direction: column;
+  }
+    .cart-content{
+      flex-direction: column;
+    }
+
+  }
+
+}
+
+/* add space between section elemnets*/
+/* content is from iat 235 */
+
+section{
+
+  margin-bottom: 4rem;
+
+}
+
+.element {
+  
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: rgb(44, 21, 8);
+}
+
+h1{
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  color:rgb(44, 21, 8);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  color:rgb(44, 21, 8);
+  margin-top: 6rem;
+}
+
+h3 {
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  color:rgb(44, 21, 8);
+
+  margin-top: 1rem;
+}
+
+h4 {
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 0.25rem;
+}
+
+legend{
+  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks. */
+/* content from iat 235 */
+p {
+  font-family: Pressura;
+  margin-top:0;
+  max-width: 100rem;
+}
+
+.productimg {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+
+}
+
+.product-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.product-details p {
+  flex: 1;
+  min-width: 0;
+  margin-top: 0;
+}

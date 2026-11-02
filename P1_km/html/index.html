@@ -18,287 +18,37 @@
 
       <p>TeaTime is a modern cafe based in Vancouver. We offer a varity of items ranging from coffee & teas to desserts.</p>
 
+      <div class="placeholder">
+        <p>cafe img</p>
+      </div>
 
-      <nav>        
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="product.html">Product Listing Template</a>
-        <a href="checkout.html">Checkout Template</a>
+
+      <nav class="main-nav">        
+        
+        <a href="#menu">Menu</a>
+        <a href="#payment">Payment</a>
+        <a href="#checkout">Checkout</a>
         <a href="#feedback">Feedback Form</a>
         <a href="#contact">Contact Us</a>
-        <a href="#citations">Citations</a>
       </nav>
 
     </header> 
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
-
-
-      <section class="element">
-        <h3>In-text link</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.in-text</p>
-
-        <h4>Sample code:</h4>
-
-        <code> 
-          &lt; a href="product.html"&gt;product page&lt;/a&gt;
-        </code>
-        <h4>Rendered element:</h4>
-
         <!-- code is from IAT 235 -->
-        <p> Visit our <a href="product.html" class="in-text">Menu Page</a> to explore our selection of drinks and cakes that we have to offer.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Visit our <a href="product.html" class="in-text">Menu Page</a> to explore our selection of drinks and cakes that we have to offer.</p>
 
         
-
-      </section>
-
-
-      <!-- Default Button styling section -->
-      <section class="element">
-
-        <h3>Navigation Link</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;a href="product.html" class="button-nav"&gt;Products&lt;/a&gt;</code>
-
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="product.html"> Products</a>
-
-      </section>
-
-
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-
-        <h4>CSS selector:</h4>
-        <p>input[type="submit"], input[type="reset"]</p>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;input type="submit" value="Submit"&gt;
-          &lt;input type="reset" value="Reset"&gt;
-        </code>
-
-        <h4>Rendered element:</h4>
-
-        <form>
-          <input type="submit" value="Submit">
-          <input type="reset" value="Reset">
-        </form>
-
-
-      </section>
-
-
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
-        <h4>CSS selector:</h4>
-        <p>input[type="text"]</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;label for="customer_name"&gt;Name:&lt;/label&gt;</code>
-        <code>&lt;input type="text" id="customer_name" placeholder="Your Name"&gt;</code>
-
-        <!-- Got from Lab example -->
-        <h4>Rendered element:</h4>
-        <form>
-          <fieldset>
-            <label for="customer_name">Name:</label>
-				    <input type="text" id="customer_name" placeholder="Your Name">
-          </fieldset>
-        </form>
-
-      </section>
-
-      <!--used w3schools to learn about radio button-->
-      <section class="element">
-        <h3>Radio Button with Label</h3>
-        <h4>CSS selector:</h4>
-        <p>input[type="radio"]</p>
-
-        <h4>Sample code:</h4>
-        <code> &lt;input type="radio" id="small" name="drink_size" value="small"&gt;</code>
-        <h4>Rendered element:</h4>
-
-        <form> 
-
-          <fieldset>
-            
-            <legend>Choose your drink size:</legend>
-            <label for="small">Small</label>
-            <input type="radio" id="small" name="drink_size" value="small">
-
-            <label for="medium">Medium</label>
-            <input type="radio" id="medium" name="drink_size" value="medium">
-
-            <label for="large">Large</label>
-            <input type="radio" id="large" name="drink_size" value="large">
-
-
-
-          </fieldset>
-        </form>
-
-
-      </section>
-
-
-      <section class="element">
-        <h3>Image as a Link</h3>
-        <h4>CSS selector:</h4>
-        <p>.image</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;a href="product.html"&gt;&lt;img class="image" src="coffee.jpg" alt="a cup of coffee"&gt;&lt;/a&gt; </code>
-        <h4>Rendered element:</h4>
-
-        <a href="product.html" class="image-link">
-          <img class="image" src="coffee.jpg" alt="a cup of coffee" width="100">
-
-        </a>
-
-
-      </section>
 
 
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
-
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
-
-      <section class="element">
-        <h3>Headings</h3>
-        <h4>CSS selector:</h4>
-        <p>h1, h2, h3, h4</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
-        <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
-        <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
-        <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
-        <h4>Rendered element:</h4>
-
-        <h1>Heading 1</h1>
-
-        <h2>Heading 2</h2> 
-        <h3>Heading 3</h3>
-       
-        <h4>Heading 4</h4>
-        
-
-      </section>
-
-      <section class="element">
-        <h3>Paragraphs</h3>
-        <h4>CSS selector:</h4>
-        <p>p</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;p&gt;TeaTime is a modern cafe based in Vancouver. We serve a variety of items ranging from coffee, teas, and cakes. We welcome everyone in our cafe!.&lt;/p&gt;</code>
-        <h4>Rendered element:</h4>
-
-        <!-- code is from IAT 235 -->
-
-        <p>TeaTime is a modern cafe based in Vancouver. We serve a variety of items ranging from coffee, teas, and cakes. We welcome everyone in our cafe!   </p>
-
-      </section>
-      <!--used w3schools to learn about ol and li and how to use them-->
-      <section class="element">
-        <h3>Numbered Lists</h3>
-        <h4>CSS selector:</h4>
-        <p>ol</p>
-
-        <h4>Sample code:</h4>
-        <code> 
-          &lt;ol&gt;
-          &lt;li&gt;Choose your drink&lt;/li&gt;
-          &lt;li&gt;Choose a cake&lt;/li&gt;
-          &lt;li&gt;Place your order!&lt;/li&gt;
-          &lt;/ol&gt;
-
-        </code>
-        <h4>Rendered element:</h4>
-
-        <ol> 
-
-          <li>Choose your drink</li>
-          <li>Choose a cake</li>
-          <li>Place your order!</li>
-
-        </ol>
-
-
-
-
-      </section>
-
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-      <h2>Combined Elements</h2>
-
-      <section class="element">
-        <h3>Main Navigation</h3>
-        <h4>CSS selector:</h4>
-        <p>nav</p>
-
-        <h4>Sample code:</h4>
-        <code> 
-          &lt;a href="index.html"&gt;Home&lt;/a&gt;
-          &lt;a href="product.html"&gt;Menu&lt;/a&gt;
-          &lt;a href="checkout.html"&gt;Checkout&lt;/a&gt;
-          &lt;a href="payment.html"&gt;Payment&lt;/a&gt;
-        </code>
-        <h4>Rendered element:</h4>
-
-
-        <nav>
-
-          <a href="#home">Home</a>
-          <a href="#product-listing">Menu</a>
-          <a href="#checkout">Checkout</a>
-          <a href="#payment">Payment</a>
-        </nav>
-
-        
-      </section>
-
-     <section class="element" id="product-listing">
+     <section class="element" id="menu">
       
       
-      <h3>Product Listing</h3>
-      <h4>CSS selector:</h4>
-        <p>article, article a, article a:hover, article a:focus, .productimg</p>
-
-        <h4>Sample code:</h4>
-        <code> 
-        &lt;article id="Strawberry Cake"&gt;
-        &lt;h4&gt; Strawberry Cake &lt;h4&gt;
-        &lt;p&gt;a soft, delicate, cake topped with fresh strawberries perfect for the season!&lt;p&gt;
-        &lt;p&gt;$7.00&lt;p&gt;
-        &lt;a href="product.html"&gt; View Product&lt;/a&gt;
-        &lt;article&gt;
-        
-      </code>
-      <h4>Rendered element:</h4>
-      
-
+      <h2>Menu</h2>
 
       <!--used w3schools to decide when to use article vs section. Used article because the items are like one standalone thing that isn't reused-->
       <div class="product-container">
@@ -309,7 +59,7 @@
           <h4> Classic Latte</h4>
 
           <div class="product-details">
-          <img class="productimg" src="latte.jpg" alt="latte" width="100">
+          <img class="productimg" src="../html/img/latte.jpg" alt="latte" width="100">
           <p> a classic latte that you can never go wrong with. A classic espresso drink with hot steamed milk. </p>
           </div>
 
@@ -326,7 +76,7 @@
           <h4>Strawberry Cake</h4>
 
           <div class="product-details">
-          <img class="productimg" src="cake.jpg" alt="cake" width="100">
+          <img class="productimg" src="../html/img/cake.jpg" alt="cake" width="100">
           <p> a soft, delicate, cake topped with fresh strawberries perfect for the season!</p>
           </div>
 
@@ -342,18 +92,7 @@
         
 
       <section class="element" id="payment">
-        <h3>Payment Form</h3>
-        <h4>CSS selector:</h4>
-        <p>.payment-container</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;input type="radio" id="paypal" name="payment_option" value="PAYPAL"&gt;</code>
-         <code>&lt;ilabel for="paypal"&gt;PAYPAL&lt;/label&gt;&lt;br&gt;</code>
-
-         <code>&lt;label for="card_payment"&gt;Card Information:&lt;/label&gt;</code>
-         <code>&lt;input type="text" id="card_payment" placeholder="123456789"&gt;</code>
-
-         <h4>Rendered element:</h4>
+        <h2>Payment Form</h2>
 
 
         <p>Choose your payment option</p>
@@ -434,15 +173,8 @@
 
       <section class="element" id="checkout">
         
-        <h3>Checkout Cart</h3>
-        <h4>CSS selector:</h4>
-        <p>.cart-content</p>
+        <h2>Checkout Cart</h2>
 
-        <h4>Sample code:</h4>
-         <code>&lt;p&gt; &lt;a href="#latte"&gt; Classic Latte&lt;/a&gt; &lt;span class="price"&gt;$15&lt;/span&gt;&lt;/p&gt;</code>
-        <code>&lt;p&gt;&lt;span class="price"&gt; &lt;b&gt; $28 &lt;b&gt; &lt;/span&gt;&lt;/p&gt;</code>
-
-        <h4>Rendered element:</h4>
 
 
         <form>
@@ -502,26 +234,6 @@
 
     </section>
 
-    <!-- brand components -->
-
-    <section id="brand_components">
-      <h2>Brand Components</h2>
-
-      <h3>Design System</h3>
-
-      <img src="design-system.png" alt="website design system" width="500">
-
-      <h3>Fonts</h3>
-      <h4>GT America Standard</h4>
-      <p>GT Pressura Regular</p>
-
-      <h3>Imagery</h3>
-      <img src="cake.jpg" alt="cake" width="100">
-      <img src="coffee.jpg" alt="a cup of coffee" width="100">
-      <img src="latte.jpg" alt="latte" width="100">
-
-    </section>
-
     <!--feedback form-->
     <section id="feedback">
       <h2> Customer Feedback</h2>
@@ -555,62 +267,6 @@
 
     <section id="contact">
       <h2>Contact Us on Instagram @TeaTime </h2>
-    </section>
-
-
-
-    <!--branding ideas -->
-    <section id="branding_ideas">
-      <h2>Branding Ideas</h2>
-
-      <section class="element">
-
-        <h3>What does TeaTime do?</h3>
-        <p> 
-          TeaTime is a modern style cafe based in Vancouver that sells a variety of items ranging from coffee, teas, and cakes. The cafe provides a casual and comfortable environment for all customers to comfortably enjoy our drinks and cakes. With our range of products, we cater to a wide range of customers with different tastes. Students enjoy studying at our cafe given the calm and relaxing space to study and get work done.
-        </p>
-
-        <h3>Who is the company to potential customers?</h3>
-        <p>
-          Students who want a cozy cafe and a drink to pass the time studying.
-        </p>
-        <p>
-          Older generation who would want to reminisce on old flavours with a modern twist.
-        </p>
-
-        <h3>Why purchase from TeaTime?</h3>
-
-        <p>TeaTime offers a variety of items to cater towards a wider range of people. Our cafe provides a modern, calm, and relaxing environment that people can enjoy, hang out with friends, or get work done. </p>
-      
-      </section>
-
-    </section>
-    
-
-
-    
-    <!-- // COMBINED ELEMENTS SECTION -->
-    <section id="citations">
-      <h2>Citations</h2>
-
-      <ul>
-        <li> Liv It Up Cafe. (2026). <strong> Latte [Image]</strong>. Retrieved from <a href="https://www.facebook.com/livitupcafe/">https://www.facebook.com/livitupcafe/</a>.</li>
-
-        <li>KamranAydinov. (2026). <strong>A top view hot espresso [Image] </strong>. Retrived from <a href="https://www.magnific.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_10186901.htm#fromView=keyword&page=1&position=1&uuid=82be45e0-7535-4d85-a8a6-3708a6bb1396&track=ais_hybrid&query=Coffee+drink">https://www.magnific.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_10186901.htm#fromView=keyword&page=1&position=1&uuid=82be45e0-7535-4d85-a8a6-3708a6bb1396&track=ais_hybrid&query=Coffee+drink</a>.</li>
-
-        <li>Wirestock. (2026). <strong> Closeup shot of a piece of delicious strawberry cake on a plate [Image] </strong>. Retrieved from <a href="https://www.magnific.com/free-photo/closeup-shot-piece-delicious-strawberry-cake-plate_17248674.htm#fromView=keyword&page=17&position=25&uuid=7d0f2b2b-8d96-4f18-a0f9-c1c702993138&track=ais_hybrid&query=Shortcake+bakery">https://www.magnific.com/free-photo/closeup-shot-piece-delicious-strawberry-cake-plate_17248674.htm#fromView=keyword&page=17&position=25&uuid=7d0f2b2b-8d96-4f18-a0f9-c1c702993138&track=ais_hybrid&query=Shortcake+bakery</a></li>
-
-
-      </ul>
-
-      <h3> Font Credits</h3>
-      <ul>
-        <li>GT America Standard Regular. Designed by Noël Leu. Grilli Type. Retrieved from <a href="https://www.grillitype.com/typeface/gt-pressura">https://www.grillitype.com/typeface/gt-pressura</a></li>
-
-        <li>Gt Pressura Regular. Designed by Dominik Huber and Marc Kappeler. Grilli Type. Retrieved from <a href="https://www.grillitype.com/typeface/gt-pressura">https://www.grillitype.com/typeface/gt-pressura</a></li>
-
-      </ul>
-
     </section>
 
 
