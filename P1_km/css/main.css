@@ -352,20 +352,27 @@ form input[type="radio"]{
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .product-container article {
   flex: 1 1 15rem;
+  min-width: 0;
   margin-bottom: 0;
 }
 
 @media screen and (max-width: 600px) {
   .product-container {
     flex-direction: column;
+    width: 100%;
   }
 
+
   .product-container article {
+    flex: 0 0 auto;
     width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -417,7 +424,9 @@ ol, ul{
 }
 
 article {
-  width: 15rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   min-height: 22rem;
   padding: 1rem;
   border: 1px solid rgb(196,187,163);
@@ -448,6 +457,8 @@ article a:hover, article a:focus {
   flex-direction: row;
   align-items: flex-start;
   gap: 1rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .product-details p {
