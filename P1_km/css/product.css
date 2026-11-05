@@ -110,8 +110,8 @@ p {
 }
 
 .productimg {
-  width: 20rem;
-  height: 20rem;
+  width: 30rem;
+  height: 30rem;
   object-fit: cover;
 
 }
@@ -120,11 +120,90 @@ p {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.product-details p {
-  flex: 1;
-  min-width: 0;
-  margin-top: 0;
+.product-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.product-info p {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .product-details {
+    flex-direction: column;
+  }
+
+  .productimg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .product-info {
+    width: 100%;
+  }
+}
+
+.product-info form{
+  border: 0.06rem solid rgb(225, 220, 206);
+  border-radius: 0.3rem;
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgb(251, 250, 245);
+}
+
+fieldset {
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+form label {
+  font-family: Pressura, sans-serif;
+}
+
+input[type="number"] {
+  width: 5rem;
+  padding: 6px;
+  margin-left: 0.5rem;
+  background-color: rgb(237, 234, 225);
+  border: 1px solid rgb(196, 187, 163);
+  border-radius: 5px;
+}
+
+.add-to-cart {
+  font-family: America, Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  color: rgb(44, 21, 8);
+  border: 1px solid rgb(44, 21, 8);
+  border-radius: 2rem;
+
+  transition: background-color 0.5s;
+}
+
+.add-to-cart:hover, .add-to-cart:focus {
+  color: rgb(237, 234, 225);
+  background: linear-gradient(to bottom right, rgb(86, 197, 211), rgb(179, 221, 75));
+}
+
+.in-text {
+  color: rgb(86, 197, 211);
+  text-decoration: none;
+}
+
+.in-text:hover,
+.in-text:focus {
+  color: rgb(255, 108, 7);
+  text-decoration: underline;
+}
+
+.add-to-cart {
+    display: block;
+    margin-left: auto;
 }

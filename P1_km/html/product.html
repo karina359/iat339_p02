@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang ="en">
-    <html>
          
          <head>
 
@@ -12,26 +11,20 @@
 
         </head>
         <body>
+            <p><a href="index.html#menu" class="in-text">&larr; Back to Menu</a></p>
             <h1> Classic Latte</h1>
+        <section>
 
-          <div class="product-details">
-          <img class="productimg" src="../html/img/latte.jpg" alt="latte" width="100">
-          <p> a classic latte that you can never go wrong with. A classic espresso drink with hot steamed milk. Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. </p>
-          </div>
-          <p> Ingredients: espresso and steamed milk </p>
+            <div class="product-details">
+            <img class="productimg" src="../html/img/latte.jpg" alt="latte" width="100">
+            <div class="product-info">
+                <p> a classic latte that you can never go wrong with. A classic espresso drink with hot steamed milk. Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. </p>
+            
+            <p> Ingredients: espresso and steamed milk </p>
 
-          <p>$4.50</p>
+            <p>$4.50</p>
 
-        
-
-        </body>
-
-              </section>
-
-
-      <!--used w3schools to learn about radio button-->
-
-        <form> 
+            <form action="cart.html" method="get"> 
 
           <fieldset>
             
@@ -45,13 +38,24 @@
             <label for="large">Large</label>
             <input type="radio" id="large" name="drink_size" value="large">
 
+          </fieldset>
 
+          <fieldset>
+            <label for="quantity"> Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1">
 
           </fieldset>
+
+          <button type="submit" class="add-to-cart"> Add to Cart</button>
+
+          
         </form>
+        </div>
+        </div>
 
+    </section>
 
-      </section>
-    </html>
+     
+     </body>
 
 </html>

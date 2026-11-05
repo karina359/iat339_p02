@@ -1,7 +1,4 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
+
 *{
   box-sizing: border-box;
 }
@@ -346,33 +343,33 @@ form label {
 form input[type="radio"]{
   width: auto;
 }
+/* used w3schools to learn about grids*/
 
 .product-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+
+  gap: 1.5rem;
   width: 100%;
-  max-width: 100%;
+
 }
 
 .product-container article {
-  flex: 1 1 15rem;
+  width: 100%;
   min-width: 0;
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .product-container {
-    flex-direction: column;
-    width: 100%;
+    grid-template-columns: 1fr;
   }
 
 
   .product-container article {
-    flex: 0 0 auto;
     width: 100%;
-    max-width: 100%;
+   
   }
 }
 
