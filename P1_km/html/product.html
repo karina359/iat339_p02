@@ -13,34 +13,35 @@
         <body>
             <p><a href="index.html#menu" class="in-text">&larr; Back to Menu</a></p>
             <h1> Classic Latte</h1>
-        <section>
+        <section class="product-details">
 
-            <div class="product-details">
             <img class="productimg" src="../html/img/latte.jpg" alt="latte" width="100">
             <div class="product-info">
                 <p> a classic latte that you can never go wrong with. A classic espresso drink with hot steamed milk. Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. </p>
             
             <p> Ingredients: espresso and steamed milk </p>
 
-            <p>$4.50</p>
+            <p class="product-price">$4.50</p>
 
             <form action="cart.html" method="get"> 
 
           <fieldset>
             
             <legend>Choose your drink size:</legend>
-            <label for="small">Small</label>
-            <input type="radio" id="small" name="drink_size" value="small">
+            <div class="size-options">
+                <label for="small">
+                <input type="radio" id="small" name="drink_size" value="small">Small</label>
 
-            <label for="medium">Medium</label>
-            <input type="radio" id="medium" name="drink_size" value="medium">
+                <label for="medium">
+                <input type="radio" id="medium" name="drink_size" value="medium">Medium</label>
 
-            <label for="large">Large</label>
-            <input type="radio" id="large" name="drink_size" value="large">
+                <label for="large">
+                <input type="radio" id="large" name="drink_size" value="large">Large</label>
+            </div>
 
           </fieldset>
 
-          <fieldset>
+          <fieldset class="quantity">
             <label for="quantity"> Quantity:</label>
             <input type="number" id="quantity" name="quantity" value="1">
 
@@ -50,7 +51,6 @@
 
           
         </form>
-        </div>
         </div>
 
     </section>

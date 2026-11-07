@@ -33,39 +33,10 @@ body {
 
 }
 
-/* media querey */
-@media screen and (max-width:992px){
 
-}
-
-@media screen and (max-width:600px){
-  body{
-    .payment-container {
-      flex-direction: column;
-  }
-    .cart-content{
-      flex-direction: column;
-    }
-
-  }
-
-}
-
-/* add space between section elemnets*/
-/* content is from iat 235 */
-
-section{
-
-  margin-bottom: 4rem;
-
-}
-
-.element {
-  
-  padding-bottom: 2rem;
-  border-top-width: 0.15rem;
-  border-top-style: solid;
-  border-top-color: rgb(44, 21, 8);
+p {
+    font-family: Pressura, sans-serif;
+    margin-top: 0;
 }
 
 h1{
@@ -101,59 +72,62 @@ legend{
   margin-bottom: 0.25rem;
 }
 
-/* Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks. */
-/* content from iat 235 */
-p {
-  font-family: Pressura;
-  margin-top:0;
-  max-width: 100rem;
+.in-text {
+    color: rgb(86, 197, 211);
+    text-decoration: none;
+    text-decoration: underline;
 }
 
-.productimg {
-  width: 30rem;
-  height: 30rem;
-  object-fit: cover;
-
-}
+/* w3schoold to learn about grids*/
 
 .product-details {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 2.5rem;
+
+    width: 100%;
+    max-width: 85rem;
+    padding: 3rem;
+
+    background-color: white;
+    border: 1px solid rgb(225, 220, 206);
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(44, 21, 8, 0.12);
 }
 
 .product-info {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
     min-width: 0;
 }
 
+
 .product-info p {
-    margin-top: 0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 800px) {
-  .product-details {
-    flex-direction: column;
-  }
+.product-price {
+    font-family: America Md, sans-serif;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
 
-  .productimg {
+.productimg {
+    display: block;
     width: 100%;
-    height: auto;
     aspect-ratio: 1 / 1;
-  }
-
-  .product-info {
-    width: 100%;
-  }
+    object-fit: cover;
 }
-
+ 
 .product-info form{
-  border: 0.06rem solid rgb(225, 220, 206);
-  border-radius: 0.3rem;
-  max-width: 100%;
-  padding: 0.5rem 1rem;
-  background-color: rgb(251, 250, 245);
+    width:100%;
+    border: 0.06rem solid rgb(225, 220, 206);
+    border-radius: 0.5rem;
+    max-width: 100%;
+    padding: 1rem;
+    background-color: rgb(251, 250, 245);
 }
 
 fieldset {
@@ -162,20 +136,46 @@ fieldset {
   padding: 0;
 }
 
+legend {
+    font-family: America Md, sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
 form label {
   font-family: Pressura, sans-serif;
 }
 
+
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.size-options label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type="radio"] {
+    margin: 0;
+}
+
 input[type="number"] {
   width: 5rem;
-  padding: 6px;
+  padding: 0.5rem;
   margin-left: 0.5rem;
   background-color: rgb(237, 234, 225);
   border: 1px solid rgb(196, 187, 163);
   border-radius: 5px;
 }
+/*w3schools to learn about the display block*/
 
 .add-to-cart {
+    display: block;
+    margin-left: auto;
   font-family: America, Arial, sans-serif;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
@@ -203,7 +203,55 @@ input[type="number"] {
   text-decoration: underline;
 }
 
-.add-to-cart {
-    display: block;
-    margin-left: auto;
+.quantity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.quantity label {
+    margin: 0;
+}
+
+.quantity input[type="number"] {
+    margin: 0;
+}
+@media screen and (max-width: 800px) {
+
+    body {
+        padding: 1.5rem;
+    }
+
+    .product-details {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .productimg {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .product-details {
+        padding: 1rem;
+    }
+
+    .size-options {
+        gap: 0.75rem;
+    }
+
 }
