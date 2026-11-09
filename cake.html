@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+         
+         <head>
+
+            <meta charset="utf-8">
+            <title>Menu</title>
+
+            <link href="product_listing.css" rel="stylesheet">
+            <link href="../iat339_p02/cake.css" rel="stylesheet">
+
+        </head>
+        <body>
+          <div class="header">
+
+            <nav class="logo">
+              <a href="../iat339_p02/index.html">
+                <img src="../iat339_p02/img/icons/logo (2).png" alt="TeaTime logo" width="80">
+              </a>
+            </nav>
+
+            <nav class="main-nav">        
+            
+              <a href="#menu">Products</a>
+              <a href="../iat339_p02/contact.html">Contact Us</a>
+              <a href="../iat339_p02/P1_km/html/style_guide.html">Styleguide</a>
+              <a href="../iat339_p02/citations.html">Citations</a>
+
+              <a href="../iat339_p02/checkout.html">
+                <img src="../iat339_p02/img/icons/cart.png" alt="Checkout" width="20">
+              </a>
+
+            </nav>
+          </div>
+
+            <p><a href="index.html#menu" class="in-text">&larr; Back to Menu</a></p>
+            <h1> Classic Latte</h1>
+        <section class="product-details">
+
+            <img class="productimg" src="../iat339_p02/img/menu/cake.png" alt="cake" width="100">
+            <div class="product-info">
+                <p> a delicately sweet strawberry cake perfect for any occasion! Soft and airy guarnteed to boost your mood! </p>
+            
+            <p> Ingredients: egg, flour, strawberries, milk, water, sugar, butter, cream </p>
+
+            <p class="product-price">$4.50</p>
+
+            <form action="checkout.html" method="get"> 
+
+          <fieldset>
+            
+            <legend>Choose your drink size:</legend>
+            <div class="size-options">
+                <label for="small">
+                <input type="radio" id="small" name="drink_size" value="small">Small</label>
+
+                <label for="medium">
+                <input type="radio" id="medium" name="drink_size" value="medium">Medium</label>
+
+                <label for="large">
+                <input type="radio" id="large" name="drink_size" value="large">Large</label>
+            </div>
+
+          </fieldset>
+
+          <fieldset class="quantity">
+            <label for="quantity"> Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1">
+
+          </fieldset>
+
+          <button type="submit" class="add-to-cart"> Add to Cart</button>
+
+          
+        </form>
+        </div>
+
+    </section>
+
+     
+     </body>
+
+</html>
