@@ -300,86 +300,116 @@
 
         </form>
 
-
-
         
       </section>
+
 
       <section class="element" id="checkout">
         
         <h2>Checkout Cart</h2>
 
+        <div class="checkout">
+          <form>
 
-        <form>
+            <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
 
-          <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+            <div class="cart">
+              <h3>Cart</h3>
 
-          <div class="cart">
-            <h3>Cart</h3>
-
-            <fieldset class="cart-item">
-              <div>
-                <!-- image as a link -->
-                <a href="../iat339_p02/product_listing.html">
-                  <img src="../iat339_p02/img/tea/matcha.png" alt="image of matcha powder">
-                </a>
-
-                <!-- item description -->
-                <div class="cart-product-description">
-                  <h4>Ceremonial Grade Matcha</h4>
-                  <p>powedered matcha all the way from Kyoto, Japan!</p>
-                </div>
-
-                <!-- item cost -->
+              <fieldset class="cart-item">
                 <div>
-                  <b>$9.00</b>
-                  <p>50g</p>
+                  <div class="cart-item-description">
+                    <!-- image as a link -->
+                    <a href="../iat339_p02/product_listing.html">
+                      <img src="../iat339_p02/img/tea/matcha.png" alt="image of matcha powder" width="100">
+                    </a>
+
+                    <!-- item description -->
+                    <div class="cart-product-description">
+                      <h4>Ceremonial Grade Matcha</h4>
+                      <p>powedered matcha all the way from Kyoto, Japan!</p>
+                    </div>
+            
+                  </div>
+
+                  <!-- item cost -->
+                  <div class="cost-gram">
+                    <b>$9.00</b>
+                    <p>50g</p>
+                  </div>
+
                 </div>
+                <hr>
+                <div>
+                  <div class="cart-item-description">
+                    <!-- image as a link -->
+                    <a href="../iat339_p02/product_listing.html">
+                      <img src="../iat339_p02/img/tea/matcha.png" alt="image of matcha powder" width="100">
+                    </a>
 
+                    <!-- item description -->
+                    <div class="cart-product-description">
+                      <h4>Ceremonial Grade Matcha</h4>
+                      <p>powedered matcha all the way from Kyoto, Japan!</p>
+                    </div>
+            
+                  </div>
+
+                  <!-- item cost -->
+                  <div class="cost-gram">
+                    <b>$9.00</b>
+                    <p>50g</p>
+                  </div>
+
+                </div>
+                
+              </fieldset>
+
+            </div>
+          </form>
+
+          <form>
+
+            <div class="order-summary">
+              <h3>Order Summary</h3>
+
+              <div class="pricing">
+                <p>Subtotal</p>
+                <p>$123</p>
               </div>
-               
 
-            </fieldset>
+              <div class="pricing">
+                <p>Tax</p>
+                <p>$12</p>
+              </div>
 
-          </div>
+              <fieldset class="delivery-option">
+                <!-- pickup in store or delivery -->
 
-          <div class="order summary">
-            <h3>Order Summary</h3>
+                  <!-- pickup -->
+                  <input type="radio" id="pickup" name="delivery_option" value="pickup">
+                  <label for="pickup">Pickup</label><br>
 
-            <div class="pricing">
-              <p>Subtotal</p>
-              <p>$123</p>
+                  <!-- delivery -->
+                  <input type="radio" id="delivery" name="delivery_option" value="delivery">
+                  <label for="delivery">Delivery</label><br>
+                    
+              </fieldset>
+
+              <hr>
+
+              <div class="pricing">
+                <b>Total</b>
+                <p>$135</p>
+              </div>
+
+              <a href="../iat339_p02/checkout.html">Checkout</a>
+
+
             </div>
+          </form>
+        </div>
 
-            <div class="pricing">
-              <p>Tax</p>
-              <p>$12</p>
-            </div>
-
-            <fieldset class="delivery-option">
-              <!-- pickup in store or delivery -->
-                <!-- pickup -->
-                <input type="radio" id="pickup" name="delivery_option" value="pickup">
-                <label for="pickup">Pickup</label><br>
-
-                <!-- delivery -->
-                <input type="radio" id="delivery" name="delivery_option" value="delivery">
-                <label for="delivery">delivery</label><br>
-                  
-            </fieldset>
-
-            <div class="pricing">
-              <b>Total</b>
-              <p>$135</p>
-            </div>
-
-            <a href="../iat339_p02/checkout.html">Checkout</a>
-
-
-          </div>
-
-        
-        </form>
 
 
       </section>
