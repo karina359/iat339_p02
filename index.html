@@ -311,33 +311,50 @@
 
 
         <form>
-          <h3>Cart</h3>
 
           <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
 
-            <fieldset class="latte-cart">
-              <!-- image -->
+          <div class="cart">
+            <h3>Cart</h3>
 
-              
-              <p><a href="#latte" class="cartlink">Classic Latte</a></p>
-              <img class="productimg" src="../html/img/latte.jpg" alt="latte" width="100">
-              <p> a classic latte that you can never go wrong with. A classic espresso drink with hot steamed milk. </p>
+            <fieldset class="cart-item">
+              <div>
+                <!-- image as a link -->
+                <a href="../iat339_p02/product_listing.html">
+                  <img src="../iat339_p02/img/tea/matcha.png" alt="image of matcha powder">
+                </a>
 
-              <p>$4.50</p>
-              <!-- product description -->
-              <!-- quantity -->
+                <!-- item description -->
+                <div class="cart-product-description">
+                  <h4>Ceremonial Grade Matcha</h4>
+                  <p>powedered matcha all the way from Kyoto, Japan!</p>
+                </div>
 
+                <!-- item cost -->
+                <div>
+                  <b>$9.00</b>
+                  <p>50g</p>
+                </div>
+
+              </div>
+               
 
             </fieldset>
 
-            <fieldset class="cake-cart">
-              <!-- image -->
+          </div>
 
-              <p><a href="#cake" class="cartlink">Strawberry Cake</a> <span class="price">$5</span></p>
-              <!-- product description -->
-              <!-- quantity -->
+          <div class="order summary">
+            <h3>Order Summary</h3>
 
-            </fieldset>
+            <div class="pricing">
+              <p>Subtotal</p>
+              <p>$123</p>
+            </div>
+
+            <div class="pricing">
+              <p>Tax</p>
+              <p>$12</p>
+            </div>
 
             <fieldset class="delivery-option">
               <!-- pickup in store or delivery -->
@@ -351,12 +368,15 @@
                   
             </fieldset>
 
-            <!-- linebreak -->
-            <hr>
+            <div class="pricing">
+              <b>Total</b>
+              <p>$135</p>
+            </div>
 
-            <fieldset class="total-cost">
-              <p>Total <span class="price"><b>$28</b></span></p>
-            </fieldset>
+            <a href="../iat339_p02/checkout.html">Checkout</a>
+
+
+          </div>
 
         
         </form>
