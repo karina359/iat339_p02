@@ -67,9 +67,9 @@ section{
 .element {
   
   padding-bottom: 2rem;
-  border-top-width: 0.15rem;
+  /* border-top-width: 0.15rem;
   border-top-style: solid;
-  border-top-color: rgb(44, 21, 8);
+  border-top-color: rgb(44, 21, 8); */
 
   padding-left: 2rem;
   padding-right: 2rem;

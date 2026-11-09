@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>Checkout</title>
+
+        <link href="../iat339_p02/P1_km/css/main.css" rel="stylesheet">
+    
+
+    </head>
+    <body>
+        <header id="home"> 
+        
+            <div class="header">
+
+                <nav class="logo">
+                    <a href="../iat339_p02/index.html">
+                        <img src="../iat339_p02/img/icons/logo (2).png" alt="TeaTime logo" width="80">
+                    </a>
+                </nav>
+
+                <nav class="main-nav">        
+                
+                    <a href="../iat339_p02/index.html#menu">Products</a>
+                    <a href="../iat339_p02/contact.html">Contact Us</a>
+                    <a href="../iat339_p02/P1_km/html/style_guide.html">Styleguide</a>
+                    <a href="../iat339_p02/citations.html">Citations</a>
+
+                    <a href="../iat339_p02/checkout.html">
+                        <img src="../iat339_p02/img/icons/cart.png" alt="Checkout" width="20">
+                    </a>
+
+                </nav>
+            </div>
+
+            <h1>checkout</h1>
+
+        </header> 
+
+        <section class="element" id="checkout">
+        
+            <h2>Checkout Cart</h2>
+
+            <div class="checkout">
+                <form>
+
+                    <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+
+                    <div class="cart">
+                        <h3>Cart</h3>
+
+                        <fieldset class="cart-item">
+                            <div>
+                                <div class="cart-item-description">
+                                    <!-- image as a link -->
+                                    <a href="../iat339_p02/product_listing.html">
+                                    <img src="../iat339_p02/img/tea/matcha.png" alt="image of matcha powder" width="100">
+                                    </a>
+
+                                    <!-- item description -->
+                                    <div class="cart-product-description">
+                                    <h4>Ceremonial Grade Matcha</h4>
+                                    <p>powedered matcha all the way from Kyoto, Japan!</p>
+                                    </div>
+                            
+                                </div>
+
+                                <!-- item cost -->
+                                <div class="cost-gram">
+                                    <b>$9.00</b>
+                                    <p>50g</p>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div>
+                                <div class="cart-item-description">
+                                    <!-- image as a link -->
+                                    <a href="../iat339_p02/product_listing.html">
+                                    <img src="../iat339_p02/img/tea/matcha.png" alt="image of matcha powder" width="100">
+                                    </a>
+
+                                    <!-- item description -->
+                                    <div class="cart-product-description">
+                                    <h4>Ceremonial Grade Matcha</h4>
+                                    <p>powedered matcha all the way from Kyoto, Japan!</p>
+                                    </div>
+                            
+                                </div>
+
+                                <!-- item cost -->
+                                <div class="cost-gram">
+                                    <b>$9.00</b>
+                                    <p>50g</p>
+                                </div>
+
+                            </div>
+                            
+                        </fieldset>
+
+                    </div>
+                </form>
+
+                <form>
+
+                    <div class="order-summary">
+                    <h3>Order Summary</h3>
+
+                    <div class="pricing">
+                        <p>Subtotal</p>
+                        <p>$123</p>
+                    </div>
+
+                    <div class="pricing">
+                        <p>Tax</p>
+                        <p>$12</p>
+                    </div>
+
+                    <fieldset class="delivery-option">
+                        <!-- pickup in store or delivery -->
+
+                        <!-- pickup -->
+                        <input type="radio" id="pickup" name="delivery_option" value="pickup">
+                        <label for="pickup">Pickup</label><br>
+
+                        <!-- delivery -->
+                        <input type="radio" id="delivery" name="delivery_option" value="delivery">
+                        <label for="delivery">Delivery</label><br>
+                            
+                    </fieldset>
+
+                    <hr>
+
+                    <div class="pricing">
+                        <b>Total</b>
+                        <p>$135</p>
+                    </div>
+
+                    <a href="../iat339_p02/checkout.html">Checkout</a>
+
+
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+
+        <section class="element" id="payment">
+            <h2>Payment Form</h2>
+
+
+            <p>Choose your payment option</p>
+
+            <!-- soruce: https://www.w3schools.com/html/html_forms.asp -->
+
+            <form>
+
+                <div class="payment-container">
+
+                    <fieldset class="billing_address">
+                        <legend>Billing Address</legend>
+
+                        <!-- name -->
+                        <label for="name">Name:</label><br>
+                            <input type="text" id="name" placeholder="Jane Doe"><br>
+
+                        <!-- email -->
+                        <label for="email">Email:</label><br>
+                            <input type="text" id="email" placeholder="jane@example.com"><br>
+
+                        <!-- address -->
+                        <label for="address">Address:</label><br>
+                            <input type="text" id="address" placeholder="123 Street"><br>
+                        
+                        <!-- city -->
+                        <label for="city">City:</label><br>
+                            <input type="text" id="city" placeholder="Vancouver"><br>
+
+                    </fieldset>
+                    
+                    <fieldset class="card_payment">
+                        <legend>Payment</legend>
+
+                        <!-- radio button for card options -->
+
+                        <!-- visa -->
+                        <input type="radio" id="visa" name="payment_option" value="VISA">
+                        <label for="visa">VISA</label><br>
+
+                        <!-- mastercard -->
+                        <input type="radio" id="mastercard" name="payment_option" value="MASTERCARD">
+                        <label for="mastercard">MASTERCARD</label><br>
+
+                        <!-- paypal -->
+                        <input type="radio" id="paypal" name="payment_option" value="PAYPAL">
+                        <label for="paypal">PAYPAL</label><br>
+
+
+                        <!-- text input for card payment -->
+
+                        <!-- name on card -->
+                        <label for="card_name">Name on Card:</label><br>
+                        <input type="text" id="card_name" placeholder="Jane More Doe"><br>
+
+                        <!-- card number -->
+                        <label for="card_payment">Card Number:</label><br>
+                        <input type="text" id="card_payment" placeholder="123456789"><br>
+                        
+                        <!-- expire date -->
+                        <label for="card_exp">Card Expiry Date:</label><br>
+                        <input type="text" id="card_exp" placeholder="12/34"><br>
+            
+
+                    </fieldset>
+
+                </div>
+
+                <!-- submit button -->
+                <input type="submit" value="Submit">  
+
+            </form>
+
+        
+      </section>
+
+    </body>
+
+</html>
