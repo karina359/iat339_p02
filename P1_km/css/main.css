@@ -90,7 +90,7 @@ h2 {
   font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
   color:rgb(44, 21, 8);
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 
 }
 
@@ -99,11 +99,11 @@ h3 {
   font-size: 1.5rem;
   color:rgb(44, 21, 8);
 
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 h4 {
-  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: America Md, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 0.25rem;
 
 
@@ -505,7 +505,6 @@ article a:hover, article a:focus {
   }
 }
 
-
 .product-container {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -551,9 +550,6 @@ article a:hover, article a:focus {
 }
 
 
-
-
-
 #menu .price p {
     font-family: America Md, sans-serif;
     margin: 0.5rem 0;
@@ -587,3 +583,90 @@ article a:hover, article a:focus {
         grid-template-columns: 1fr;
     }
 }
+
+/* ***************** Checkout***************** */
+.checkout{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.cart{
+  background-color: #FBFAF5;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.cart h3{
+  margin: 0;
+  padding-bottom: 1rem;
+}
+.cart-item > div {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: space-between;
+  gap: 4rem;
+
+}
+.cart-item-description{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.cart-product-description{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 12rem;
+}
+.cart-product-description h4{
+  margin: 0;
+}
+.cost-gram{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.order-summary{
+  background-color: #FBFAF5;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+.pricing{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 20rem;
+
+}
+/* button designs: https://www.w3schools.com/css/css3_buttons.asp */
+.order-summary a{
+  background-color: rgb(44, 21, 8);
+  border: none;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  /* cursor: pointer; */
+  border-radius: 12px;
+}
+
+.order-summary a:hover{
+  background-color: #3EA5DC;
+}
+
+@media screen and (max-width: 600px) {
+  .checkout {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* ***************** Checkout***************** */
