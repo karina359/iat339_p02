@@ -127,19 +127,36 @@ code {
   display: block;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  background: #555;
-  color: #f1f1f1;
-
-}
-.header {
+/*  ******************* header ********************* */
+.header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 16px;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: rgb(224,219,204);
+
 }
+
+.logo{
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.main-nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+
+}
+
+.main-nav a{
+  
+}
+
+/*  ******************* header ********************** */
 
 .placeholder {
   width: 100%;
