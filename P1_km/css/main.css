@@ -217,38 +217,61 @@ code {
 
 /*  ******************* footer ********************** */
 footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #B3DD4B;
-    text-align: left;
-    padding: 2rem;
-    padding-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #B3DD4B;
+  text-align: left;
+  padding: 2rem;
+  padding-bottom: 6rem;
 }
 
 /*  ******************* footer ********************** */
 
 /* different hover and focus state styling to the image as a link. */
-/*styleing source: https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_opacity  */
+/* reference: https://www.w3schools.com/css/css3_images_hover.asp*/
 
-.image-link {
-  display: inline-block;
-  background-color: rgb(255, 108, 7);
-  width: 10rem;
-  max-width: 100%;
+/* Image container */
+.img-container {
+  position: relative;
+  width: 100%;
 }
 
-.image{
-  opacity: 1;
+/* Image styling */
+.image {
+  border-radius: 25px;
   display: block;
   width: 100%;
   height: auto;
-  transition: 0.5s ease;
 }
 
-.image:hover, .image:focus{
-  opacity: 0.3;
+/* Overlay styling */
+.overlay {
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #3EA5DC;
+}
 
+/* Fade in overlay on hover */
+.img-container a:hover .overlay,
+.img-container a:focus .overlay {
+  opacity: 1;
+}
+
+/* Overlay text */
+.text {
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*  ******************* about page ********************** */
@@ -268,6 +291,7 @@ footer{
 
   max-width: 60%;
 }
+
 .location{
   display: flex;
   justify-content: space-around;
@@ -275,11 +299,7 @@ footer{
   text-align: left;
   padding: 2rem;
 
-  max-width: 90vh;
-
-}
-
-.location div{
+  gap: 2rem;
 
 }
 
@@ -304,6 +324,12 @@ footer{
     font-size: 1rem;
   }
   .header{
+    flex-direction: column;
+  }
+  .about{
+    flex-direction: column;
+  }
+  .location{
     flex-direction: column;
   }
 }
