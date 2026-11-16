@@ -233,6 +233,7 @@ footer{
 
 /* Image container */
 .img-container {
+  max-width: 50vh;
   position: relative;
   width: 100%;
 }
