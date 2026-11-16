@@ -81,6 +81,7 @@ h1{
   font-size: 3rem;
   color:rgb(44, 21, 8);
   margin-bottom: 1rem;
+  margin-top:0;
 
   padding-left: 2rem;
   padding-right: 2rem;
@@ -151,7 +152,6 @@ code {
   padding: 1rem 2rem;
   background-color: rgb(251, 250, 245) ;
   position: sticky;
-  
 
 }
 
@@ -182,6 +182,34 @@ code {
 .main-nav a:hover, .main-nav a:focus {
     color: rgb(255, 108, 7);
     text-decoration: underline;
+}
+
+/* https://www.w3schools.com/css/css_background_image.asp */
+.landing{
+  background-image: url("../Landing.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 50vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 2rem;
+
+}
+
+.lannding-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 90%;
 }
 
 /*  ******************* header ********************** */
@@ -216,6 +244,9 @@ footer{
   }
   .main-nav a{
     font-size: 1rem;
+  }
+  .header{
+    flex-direction: column;
   }
 }
 
