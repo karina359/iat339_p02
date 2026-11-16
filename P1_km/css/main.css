@@ -227,6 +227,29 @@ footer{
 
 /*  ******************* footer ********************** */
 
+/* different hover and focus state styling to the image as a link. */
+/*styleing source: https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_opacity  */
+
+.image-link {
+  display: inline-block;
+  background-color: rgb(255, 108, 7);
+  width: 10rem;
+  max-width: 100%;
+}
+
+.image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+}
+
+.image:hover, .image:focus{
+  opacity: 0.3;
+
+}
+
 .placeholder {
   width: 100%;
   height: 400px;
