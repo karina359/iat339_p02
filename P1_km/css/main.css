@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: America Md;
+  font-family: "America Md";
   src: url(../fonts/GT-America-Standard-Medium-Trial.otf);
 }
 
@@ -104,7 +104,7 @@ h3 {
 }
 
 h4 {
-  font-family: America Md, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "America Md", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 0.25rem;
 
 
@@ -144,7 +144,7 @@ img {
 
 
 code {
-  background-color: (#FBFAF5);
+  background-color: #FBFAF5;
   padding: 0.5rem;
   display: block;
 }
@@ -323,7 +323,7 @@ footer{
 
 @media (max-width: 600px) {
   .main-nav {
-    gap: 0.5;
+    gap: 0.5rem;
     padding: 0.75rem;
 
   }
@@ -504,14 +504,14 @@ input {
   #payment form {
     width: 100%;
     max-width: 100%;
-    padding: 1 rem;
+    padding: 1rem;
   }
 
   .payment-container, .cart-content {
     flex-direction: column;
-    align-items:strech;
+    align-items: stretch;
     width: 100%;
-    gap: 1 rem;
+    gap: 1rem;
   }
 
   .payment-container fieldset {
@@ -689,7 +689,7 @@ article a:hover, article a:focus {
 }
 
 #menu article h3 {
-    font-family: America Md, sans-serif;
+    font-family: "America Md", sans-serif;
     font-size: 1.2rem;
     margin: 0.75rem 0 0.5rem;
     padding-bottom: 0.5rem;
@@ -705,7 +705,7 @@ article a:hover, article a:focus {
 
 
 #menu .price p {
-    font-family: America Md, sans-serif;
+    font-family: "America Md", sans-serif;
     margin: 0.5rem 0;
 }
 #menu article > a {
@@ -773,7 +773,7 @@ article a:hover, article a:focus {
 .cart-item > div {
   display: flex;
   flex-direction: row;
-  align-items: top;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 4rem;
 
@@ -919,7 +919,7 @@ article a:hover, article a:focus {
 }
 
 .individual-product .product-price {
-  font-family: America Md, sans-serif;
+  font-family: "America Md", sans-serif;
   font-size: 1.25rem;
   margin-top: 0.5rem;
 }
@@ -947,7 +947,7 @@ article a:hover, article a:focus {
 }
 
 .individual-product legend {
-  font-family: America Md, sans-serif;
+  font-family: "America Md", sans-serif;
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
 }
