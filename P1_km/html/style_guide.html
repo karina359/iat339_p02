@@ -15,28 +15,55 @@
   <body>
 
     <header id="home"> 
-      <h1>TeaTime</h1>
+      <!-- <div class="header">
 
-      <p>TeaTime is a modern cafe based in Vancouver. We offer a varity of items ranging from coffee & teas to desserts.</p>
+        <nav class="logo">
+          <a href="/index.html">
+            <img src="/img/icons/logo.png" alt="TeaTime logo" width="80">
+          </a>
+        </nav>
+
+        <nav class="main-nav">        
+        
+          <a href="../iat339_p02/index.html#menu">Menu</a>
+          <a href="../iat339_p02/about.html">About Us</a>
+          <a href="../iat339_p02/event.html">Events</a>
+
+          <a href="../iat339_p02/checkout.html">
+            <img src="../iat339_p02/img/icons/cart.png" alt="Checkout" width="20">
+          </a>
+
+        </nav>
+      </div> -->
+
+      <div class="element">
+
+        <h1>TeaTime</h1>
+
+        <p>TeaTime is a modern cafe based in Vancouver. We offer a varity of items ranging from coffee & teas to desserts.</p>
 
 
-      <nav>        
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="product.html">Product Listing Template</a>
-        <a href="checkout.html">Checkout Template</a>
-        <a href="#feedback">Feedback Form</a>
-        <a href="#contact">Contact Us</a>
-        <a href="#citations">Citations</a>
-      </nav>
+        <nav>        
+          <a href="#interactive_elements">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="product.html">Product Listing Template</a>
+          <a href="checkout.html">Checkout Template</a>
+          <a href="#feedback">Feedback Form</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#citations">Citations</a>
+        </nav>
+
+      </div>
 
     </header> 
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
-
+      
+      <div class="h2-styling">
+        <h2>Interactive Elements</h2>
+      </div>
 
       <section class="element">
         <h3>In-text link</h3>
@@ -155,16 +182,40 @@
       <section class="element">
         <h3>Image as a Link</h3>
         <h4>CSS selector:</h4>
-        <p>.image</p>
+        <p>.img-container, .image, .overlay, .text</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="product.html"&gt;&lt;img class="image" src="coffee.jpg" alt="a cup of coffee"&gt;&lt;/a&gt; </code>
+        <code>
+          &lt;div class="img-container"&gt; <br>
+            &lt;a href="https://www.google.com/maps"&gt; <br>
+              &lt;img class="image" 
+                  src="../img copy/location.png" 
+                  alt="Inside of teatime cafe"&gt; <br>
+              &lt;div class="overlay"&gt; <br>
+                &lt;div class="text"&gt;On Maps&lt;/div&gt; <br>
+              &lt;/div&gt; <br>
+           &lt;/a&gt; <br>
+          &lt;/div&gt; <br>
+        </code>
         <h4>Rendered element:</h4>
 
-        <a href="product.html" class="image-link">
+         <!-- image as a link to google maps -->
+        <div class="img-container">
+            <a href="https://www.google.com/maps">
+                <img class="image" 
+                    src="../img copy/location.png" 
+                    alt="Inside of teatime cafe">
+                
+                <div class="overlay">
+                    <div class="text">On Maps</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- <a href="product.html" class="image-link">
           <img class="image" src="../html/img/coffee.jpg" alt="a cup of coffee" width="100">
 
-        </a>
+        </a> -->
 
 
       </section>
@@ -177,7 +228,10 @@
 
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
-      <h2>Text Elements</h2>
+
+      <div class="h2-styling">
+        <h2>Text Elements</h2>
+      </div>
 
       <section class="element">
         <h3>Headings</h3>
@@ -252,7 +306,10 @@
 
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
-      <h2>Combined Elements</h2>
+
+      <div class="h2-styling">
+        <h2>Combined Elements</h2>
+      </div>
 
       <section class="element">
         <h3>Main Navigation</h3>
@@ -440,64 +497,150 @@
         <p>.cart-content</p>
 
         <h4>Sample code:</h4>
-         <code>&lt;p&gt; &lt;a href="#latte"&gt; Classic Latte&lt;/a&gt; &lt;span class="price"&gt;$15&lt;/span&gt;&lt;/p&gt;</code>
-        <code>&lt;p&gt;&lt;span class="price"&gt; &lt;b&gt; $28 &lt;b&gt; &lt;/span&gt;&lt;/p&gt;</code>
+        <code>
+       
+          &lt;a href="../iat339_p02/product_listing.html"&gt;
+              &lt;img src="../iat339_p02/img/tea/matcha.png" 
+                  alt="image of matcha powder" width="100"&gt;
+          &lt;/a&gt;
+
+
+
+              &lt;h4&gt;Ceremonial Grade Matcha&lt;/h4&gt;
+              &lt;p&gt;powedered matcha all the way from Kyoto, Japan!&lt;/p&gt;
+
+
+          &lt;b&gt;$7.00&lt;/b&gt;
+          &lt;p&gt;50g&lt;/p&gt;
+
+        </code>
+        <code>
+ 
+          &lt;h3&gt;Order Summary&lt;/h3&gt;
+
+          &lt;div class="pricing"&gt;
+              &lt;p&gt;Subtotal&lt;/p&gt;
+              &lt;p&gt;$14&lt;/p&gt;
+          &lt;/div&gt;
+
+
+              &lt;input type="radio" id="pickup" name="delivery_option" value="pickup"&gt;
+              &lt;label for="pickup"&gt;Pickup&lt;/label&gt;&lt;br&gt;
+
+          &lt;hr&gt;
+
+
+          &lt;a href="/checkout.html" class="add-to-cart"&gt;Checkout&lt;/a&gt;
+
+        </code>
+
 
         <h4>Rendered element:</h4>
+        <div class="checkout">
+          <form>
+
+              <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+
+              <div class="cart">
+                  <h3>Cart</h3>
+
+                  <fieldset class="cart-item">
+                      <div>
+                          <div class="cart-item-description">
+                              <!-- image as a link -->
+                              <a href="../">
+                              <img src="../img copy/tea/matcha.png" alt="image of matcha powder" width="100">
+                              </a>
+
+                              <!-- item description -->
+                              <div class="cart-product-description">
+                              <h4>Ceremonial Grade Matcha</h4>
+                              <p>powdered matcha all the way from Kyoto, Japan!</p>
+                              </div>
+                      
+                          </div>
+
+                          <!-- item cost -->
+                          <div class="cost-gram">
+                              <b>$7.00</b>
+                              <p>50g</p>
+                          </div>
+
+                      </div>
+                      <hr>
+                      <div>
+                          <div class="cart-item-description">
+                              <!-- image as a link -->
+                              <a href="/product_listing.html">
+                              <img src="../img copy/tea/matcha.png" alt="image of matcha powder" width="100">
+                              </a>
+
+                              <!-- item description -->
+                              <div class="cart-product-description">
+                              <h4>Ceremonial Grade Matcha</h4>
+                              <p>powdered matcha all the way from Kyoto, Japan!</p>
+                              </div>
+                      
+                          </div>
+
+                          <!-- item cost -->
+                          <div class="cost-gram">
+                              <b>$7.00</b>
+                              <p>50g</p>
+                          </div>
+
+                      </div>
+                      
+                  </fieldset>
+
+              </div>
+          </form>
+
+          <form>
+
+              <div class="order-summary">
+              <h3>Order Summary</h3>
+
+              <div class="pricing">
+                  <p>Subtotal</p>
+                  <p>$14</p>
+              </div>
+
+              <div class="pricing">
+                  <p>Tax</p>
+                  <p>$5</p>
+              </div>
+
+              <fieldset class="delivery-option">
+                  <!-- pickup in store or delivery -->
+
+                  <!-- pickup -->
+                  <input type="radio" id="pickup" name="delivery_option" value="pickup">
+                  <label for="pickup">Pickup</label><br>
+
+                  <!-- delivery -->
+                  <input type="radio" id="delivery" name="delivery_option" value="delivery">
+                  <label for="delivery">Delivery</label><br>
+                      
+              </fieldset>
+
+              <hr>
+
+              <div class="pricing">
+                  <b>Total</b>
+                  <p>$19</p>
+              </div>
+
+              <a href="/checkout.html" class="add-to-cart">Checkout</a>
 
 
-        <form>
-          <legend>Cart</legend>
+              </div>
+          </form>
 
-          <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
-
-          <fieldset class="latte-cart">
-            <!-- image -->
-
-            
-            <p><a href="#latte" class="cartlink">Classic Latte</a></p>
-            <img class="productimg" src="../html/img/latte.jpg" alt="latte" width="100">
-            <p> a classic latte that you can never go wrong with. A classic espresso drink with hot steamed milk. </p>
-
-            <p>$4.50</p>
-            <!-- product description -->
-            <!-- quantity -->
+        </div>
 
 
-          </fieldset>
-
-          <fieldset class="cake-cart">
-            <!-- image -->
-
-            <p><a href="#cake" class="cartlink">Strawberry Cake</a> <span class="price">$5</span></p>
-            <!-- product description -->
-            <!-- quantity -->
-
-          </fieldset>
-
-          <fieldset class="delivery-option">
-            <!-- pickup in store or delivery -->
-              <!-- pickup -->
-              <input type="radio" id="pickup" name="delivery_option" value="pickup">
-              <label for="pickup">Pickup</label><br>
-
-              <!-- delivery -->
-              <input type="radio" id="delivery" name="delivery_option" value="delivery">
-              <label for="delivery">delivery</label><br>
-                
-          </fieldset>
-
-          <!-- linebreak -->
-          <hr>
-
-          <fieldset class="total-cost">
-            <p>Total <span class="price"><b>$28</b></span></p>
-          </fieldset>
-
-        
-        </form>
-
-
+       
       </section>
 
 
@@ -603,12 +746,35 @@
 
         <li>Wirestock. (2026). <strong> Closeup shot of a piece of delicious strawberry cake on a plate [Image] </strong>. Retrieved from <a href="https://www.magnific.com/free-photo/closeup-shot-piece-delicious-strawberry-cake-plate_17248674.htm#fromView=keyword&page=17&position=25&uuid=7d0f2b2b-8d96-4f18-a0f9-c1c702993138&track=ais_hybrid&query=Shortcake+bakery">https://www.magnific.com/free-photo/closeup-shot-piece-delicious-strawberry-cake-plate_17248674.htm#fromView=keyword&page=17&position=25&uuid=7d0f2b2b-8d96-4f18-a0f9-c1c702993138&track=ais_hybrid&query=Shortcake+bakery</a></li>
 
+        <li>Lobo, D. (2025, August 8). <strong>A cinnamon swirl pastry dusted with sugar [Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/a-cinnamon-swirl-pastry-dusted-with-sugar-vy6lJ4l32go">https://unsplash.com/photos/a-cinnamon-swirl-pastry-dusted-with-sugar-vy6lJ4l32go</a>.</li>
+
+        <li>Nagaoka, T. (2020, October 14). <strong>White and red strawberry cake [Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/white-and-red-strawberry-cake-fENvSZUzbzU">https://unsplash.com/photos/white-and-red-strawberry-cake-fENvSZUzbzU</a>.</li>
+
+        <li>Nguyen, P. (2019, August 14). <strong>Green powder [Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/green-powder-DgW9B48pRb4">https://unsplash.com/photos/green-powder-DgW9B48pRb4</a>.</li>
+
+        <li>Rigoli, M. (2018, August 9). <strong>Loose jasmine, rose and cornflower leaf tea [Photograph]</strong>. iStock. Retrieved from <a href="https://www.istockphoto.com/photo/loose-jasmine-rose-and-cornflower-leaf-tea-gm1014818650-273155356">https://www.istockphoto.com/photo/loose-jasmine-rose-and-cornflower-leaf-tea-gm1014818650-273155356</a>.</li>
+
+        <li>A heart-shaped brooch sitting on top of a table. (n.d.). <strong>[Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/a-heart-shaped-brooch-sitting-on-top-of-a-table-4LYXkpNheHE">https://unsplash.com/photos/a-heart-shaped-brooch-sitting-on-top-of-a-table-4LYXkpNheHE</a>.</li>
+
+        <li>Sixteen Miles Out. (2025, January 29). <strong>A heart shaped bowl filled with seeds and herbs [Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/a-heart-shaped-bowl-filled-with-seeds-and-herbs-zfpGkqWEG3k">https://unsplash.com/photos/a-heart-shaped-bowl-filled-with-seeds-and-herbs-zfpGkqWEG3k</a>.</li>
+
+        <li>TeaCora Rooibos. (2020, August 14). <strong>Clear drinking glass with brown liquid [Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/clear-drinking-glass-with-brown-liquid-UAvekPsMTkQ">https://unsplash.com/photos/clear-drinking-glass-with-brown-liquid-UAvekPsMTkQ</a>.</li>
+
+        <li>People dining and working in a modern cafe. (2026, January 14). <strong>[Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/people-dining-and-working-in-a-modern-cafe-FffJ9XnRflo">https://unsplash.com/photos/people-dining-and-working-in-a-modern-cafe-FffJ9XnRflo</a>.</li>
 
       </ul>
 
       <h3>Sources</h3>
       <ul>
+        <li>W3Schools. (n.d.). <strong>CSS background image</strong>. <a href="https://www.w3schools.com/css/css_background_image.asp">https://www.w3schools.com/css/css_background_image.asp</a>.</li>
+
+        <li>W3Schools. (n.d.). <strong>CSS image hover effects</strong>. <a href="https://www.w3schools.com/css/css3_images_hover.asp">https://www.w3schools.com/css/css3_images_hover.asp</a>.</li>
+
+        <li>W3Schools. (n.d.). <strong>CSS borders</strong>. <a href="https://www.w3schools.com/css/css3_borders.asp">https://www.w3schools.com/css/css3_borders.asp</a>.</li>
+
+        <li>W3Schools. (n.d.). <strong>How to create a checkout form</strong>. <a href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a>.</li>
         
+        <li>W3Schools. (n.d.). <strong>HTML forms</strong>. <a href="https://www.w3schools.com/html/html_forms.asp">https://www.w3schools.com/html/html_forms.asp</a>.</li>
       </ul>
 
       <h3> Font Credits</h3>
@@ -620,6 +786,24 @@
       </ul>
 
     </section>
+
+    <footer>
+
+      <nav class="logo">
+          <a href="../iat339_p02/index.html">
+            <img src="../img copy/icons/logo.png" alt="TeaTime logo" width="80">
+          </a>
+      </nav>
+      <p>Contact us on Instagram @Teatime</p>
+
+      <nav class="main-nav">
+        <a href="../iat339_p02/P1_km/html/style_guide.html">Style Guide</a>
+        <a href="../iat339_p02/P1_km/html/style_guide.html#citations">Citations</a>
+        <a href="https://github.com/karina359/iat339_p02.git">Github</a>
+
+      </nav>
+
+    </footer>
 
 
   </body>
