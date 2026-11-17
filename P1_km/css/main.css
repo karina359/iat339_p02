@@ -126,6 +126,11 @@ p {
 
 }
 
+.h2-styling{
+  padding-left: 2rem;
+
+}
+
 ul, ol{
   font-family: Pressura, sans-serif;
   max-width: 60rem;
