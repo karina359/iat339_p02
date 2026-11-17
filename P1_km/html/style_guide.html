@@ -14,23 +14,47 @@
 
   <body>
 
-    <header id="home" class="element"> 
+    <header id="home"> 
+      <!-- <div class="header">
 
-      <h1>TeaTime</h1>
+        <nav class="logo">
+          <a href="/index.html">
+            <img src="/img/icons/logo.png" alt="TeaTime logo" width="80">
+          </a>
+        </nav>
 
-      <p>TeaTime is a modern cafe based in Vancouver. We offer a varity of items ranging from coffee & teas to desserts.</p>
+        <nav class="main-nav">        
+        
+          <a href="../iat339_p02/index.html#menu">Menu</a>
+          <a href="../iat339_p02/about.html">About Us</a>
+          <a href="../iat339_p02/event.html">Events</a>
+
+          <a href="../iat339_p02/checkout.html">
+            <img src="../iat339_p02/img/icons/cart.png" alt="Checkout" width="20">
+          </a>
+
+        </nav>
+      </div> -->
+
+      <div class="element">
+
+        <h1>TeaTime</h1>
+
+        <p>TeaTime is a modern cafe based in Vancouver. We offer a varity of items ranging from coffee & teas to desserts.</p>
 
 
-      <nav>        
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="product.html">Product Listing Template</a>
-        <a href="checkout.html">Checkout Template</a>
-        <a href="#feedback">Feedback Form</a>
-        <a href="#contact">Contact Us</a>
-        <a href="#citations">Citations</a>
-      </nav>
+        <nav>        
+          <a href="#interactive_elements">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="product.html">Product Listing Template</a>
+          <a href="checkout.html">Checkout Template</a>
+          <a href="#feedback">Feedback Form</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#citations">Citations</a>
+        </nav>
+
+      </div>
 
     </header> 
 
@@ -473,64 +497,150 @@
         <p>.cart-content</p>
 
         <h4>Sample code:</h4>
-         <code>&lt;p&gt; &lt;a href="#latte"&gt; Classic Latte&lt;/a&gt; &lt;span class="price"&gt;$15&lt;/span&gt;&lt;/p&gt;</code>
-        <code>&lt;p&gt;&lt;span class="price"&gt; &lt;b&gt; $28 &lt;b&gt; &lt;/span&gt;&lt;/p&gt;</code>
+        <code>
+       
+          &lt;a href="../iat339_p02/product_listing.html"&gt;
+              &lt;img src="../iat339_p02/img/tea/matcha.png" 
+                  alt="image of matcha powder" width="100"&gt;
+          &lt;/a&gt;
+
+
+
+              &lt;h4&gt;Ceremonial Grade Matcha&lt;/h4&gt;
+              &lt;p&gt;powedered matcha all the way from Kyoto, Japan!&lt;/p&gt;
+
+
+          &lt;b&gt;$7.00&lt;/b&gt;
+          &lt;p&gt;50g&lt;/p&gt;
+
+        </code>
+        <code>
+ 
+          &lt;h3&gt;Order Summary&lt;/h3&gt;
+
+          &lt;div class="pricing"&gt;
+              &lt;p&gt;Subtotal&lt;/p&gt;
+              &lt;p&gt;$14&lt;/p&gt;
+          &lt;/div&gt;
+
+
+              &lt;input type="radio" id="pickup" name="delivery_option" value="pickup"&gt;
+              &lt;label for="pickup"&gt;Pickup&lt;/label&gt;&lt;br&gt;
+
+          &lt;hr&gt;
+
+
+          &lt;a href="/checkout.html" class="add-to-cart"&gt;Checkout&lt;/a&gt;
+
+        </code>
+
 
         <h4>Rendered element:</h4>
+        <div class="checkout">
+          <form>
+
+              <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+
+              <div class="cart">
+                  <h3>Cart</h3>
+
+                  <fieldset class="cart-item">
+                      <div>
+                          <div class="cart-item-description">
+                              <!-- image as a link -->
+                              <a href="../">
+                              <img src="../img copy/tea/matcha.png" alt="image of matcha powder" width="100">
+                              </a>
+
+                              <!-- item description -->
+                              <div class="cart-product-description">
+                              <h4>Ceremonial Grade Matcha</h4>
+                              <p>powdered matcha all the way from Kyoto, Japan!</p>
+                              </div>
+                      
+                          </div>
+
+                          <!-- item cost -->
+                          <div class="cost-gram">
+                              <b>$7.00</b>
+                              <p>50g</p>
+                          </div>
+
+                      </div>
+                      <hr>
+                      <div>
+                          <div class="cart-item-description">
+                              <!-- image as a link -->
+                              <a href="/product_listing.html">
+                              <img src="../img copy/tea/matcha.png" alt="image of matcha powder" width="100">
+                              </a>
+
+                              <!-- item description -->
+                              <div class="cart-product-description">
+                              <h4>Ceremonial Grade Matcha</h4>
+                              <p>powdered matcha all the way from Kyoto, Japan!</p>
+                              </div>
+                      
+                          </div>
+
+                          <!-- item cost -->
+                          <div class="cost-gram">
+                              <b>$7.00</b>
+                              <p>50g</p>
+                          </div>
+
+                      </div>
+                      
+                  </fieldset>
+
+              </div>
+          </form>
+
+          <form>
+
+              <div class="order-summary">
+              <h3>Order Summary</h3>
+
+              <div class="pricing">
+                  <p>Subtotal</p>
+                  <p>$14</p>
+              </div>
+
+              <div class="pricing">
+                  <p>Tax</p>
+                  <p>$5</p>
+              </div>
+
+              <fieldset class="delivery-option">
+                  <!-- pickup in store or delivery -->
+
+                  <!-- pickup -->
+                  <input type="radio" id="pickup" name="delivery_option" value="pickup">
+                  <label for="pickup">Pickup</label><br>
+
+                  <!-- delivery -->
+                  <input type="radio" id="delivery" name="delivery_option" value="delivery">
+                  <label for="delivery">Delivery</label><br>
+                      
+              </fieldset>
+
+              <hr>
+
+              <div class="pricing">
+                  <b>Total</b>
+                  <p>$19</p>
+              </div>
+
+              <a href="/checkout.html" class="add-to-cart">Checkout</a>
 
 
-        <form>
-          <legend>Cart</legend>
+              </div>
+          </form>
 
-          <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
-
-          <fieldset class="latte-cart">
-            <!-- image -->
-
-            
-            <p><a href="#latte" class="cartlink">Classic Latte</a></p>
-            <img class="productimg" src="../html/img/latte.jpg" alt="latte" width="100">
-            <p> a classic latte that you can never go wrong with. A classic espresso drink with hot steamed milk. </p>
-
-            <p>$4.50</p>
-            <!-- product description -->
-            <!-- quantity -->
+        </div>
 
 
-          </fieldset>
-
-          <fieldset class="cake-cart">
-            <!-- image -->
-
-            <p><a href="#cake" class="cartlink">Strawberry Cake</a> <span class="price">$5</span></p>
-            <!-- product description -->
-            <!-- quantity -->
-
-          </fieldset>
-
-          <fieldset class="delivery-option">
-            <!-- pickup in store or delivery -->
-              <!-- pickup -->
-              <input type="radio" id="pickup" name="delivery_option" value="pickup">
-              <label for="pickup">Pickup</label><br>
-
-              <!-- delivery -->
-              <input type="radio" id="delivery" name="delivery_option" value="delivery">
-              <label for="delivery">delivery</label><br>
-                
-          </fieldset>
-
-          <!-- linebreak -->
-          <hr>
-
-          <fieldset class="total-cost">
-            <p>Total <span class="price"><b>$28</b></span></p>
-          </fieldset>
-
-        
-        </form>
-
-
+       
       </section>
 
 
